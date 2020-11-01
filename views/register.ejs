@@ -1,0 +1,87 @@
+<%- include("partials/header"); %>
+<style>
+  .form-label {
+    color: #868e96;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+	}
+	label {
+    display: inline-block;
+    margin-bottom: .5rem;
+      }
+	h1 {
+	margin-bottom: .5rem;
+    font-weight: 700;
+    line-height: 1.3;
+	}
+	h4{
+		font-weight:600;
+	}
+	body{
+		font-family: Poppins,sans-serif;
+	}
+	.btn {
+    letter-spacing: .3em;
+	text-transform: uppercase;}
+	h5 {
+    text-align: center;
+	color: #adb5bd;
+	}
+</style>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-5">
+	    <div class="w-100 py-4 px-md-5 px-xl-6 position-relative"> 
+	<h1>
+	  Hello!
+    </h1>
+	<h4 class="mb-3">
+		Create your free account
+		</h4>		
+
+<form  action="/register" method="POST">
+	<div class="form-group">
+		<label for="loginUsername" class="form-label">Username</label>
+		<input class="form-control" for="loginUsername" type="text" name="username" placeholder="Username">
+	</div>
+	<div class="form-group">
+		<label for="loginEmail" class="form-label">Email Address</label>
+		<input class="form-control" for="loginEmail" type="email" name="email" placeholder="example@gmail.com">
+	</div>
+	<div class="form-group">
+		<label for="loginPassword" class="form-label">Password</label>
+		<input class="form-control" for="loginPassword" type="password" name="password"              placeholder="Password">
+	</div>
+	<div class="form-group">
+		<button class="btn btn-lg btn-primary btn-block">
+		Sign up
+	</button>
+	</div>
+	</form>
+	<h5 class="my-3 hr-text letter-spacing-2" style="text-align:center;color:                       #adb5bd;">OR</h5>
+	
+	  <a href="/auth/google" class=" mb-3 btn btn-outline-primary btn-block">
+		<i class="fab fa-google left"></i>Connect with Google</a>
+	
+   </div>
+</div>
+	
+  <div class="col-md-7">		
+	<div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" id="bg-dark">
+    <div class="my-3 p-3">
+      <h2  style="color:dimgray;text-transform:uppercase;letter-spacing: .2em;">Discover Campgrounds</h2>
+  </div>
+    <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+		<img src="https://images.unsplash.com/photo-1528433556524-74e7e3bfa599?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" style="width:100%;border-radius: 21px 21px 0 0;height:100%;">
+		</div>
+  </div>
+		
+</div>
+	  
+	  
+	  
+	  
+<%- include("partials/footer"); %>

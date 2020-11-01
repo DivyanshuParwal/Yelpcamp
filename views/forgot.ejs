@@ -1,0 +1,54 @@
+<%- include("partials/header"); %>
+<style>
+	.container{max-width: 450px;
+    padding: 0;
+    margin: 30px auto 0;
+    background: none;
+	}
+	body{
+		font-family:Poppins,sans-serif;
+	}
+	h1{
+		font-weight:800;
+		text-align:center;
+	}
+	.form-control{
+		border-radius:30px;
+		height:50px;
+	}
+	.btn{
+		border-radius:20px;
+	}
+	.form-label {
+    color: #868e96;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+	}
+	label {
+    display: inline-block;
+    margin-bottom: .5rem;
+      }
+ </style>
+
+<h1 class="py-3 py-md-4">
+	Enter your Email
+</h1>
+<div class="container" >
+<form  action="/forgot" method="POST">
+	  <div class="form-group">
+		<label for="loginEmail" class="form-label">Email Address</label>
+		<input class="form-control" id="loginEmail" type="email" name="email"                   placeholder="example@gmail.com">
+	  </div>
+	<div class="form-group">
+		<button class="btn btn-lg btn-primary btn-block" >
+		Reset password
+	</button>
+	</div>
+	</form>
+	<a id="back" href="/login">Go Back</a>
+</div>
+
+
+
+<%- include("partials/footer"); %>
