@@ -21,7 +21,7 @@ app.set("view engine","ejs");
 app.use(express.static( __dirname + "/publish"));
 app.use(methodOverride("_method"));
 app.use(require("express-session")({
-	secret: "Rusty is the best and cutest dog in the world",
+	secret: "Yelpcamp secret",
 	resave:false,
 	saveUninitialized: false
 }));
